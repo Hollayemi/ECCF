@@ -1,0 +1,549 @@
+.slides li{
+    transition:1s;
+}
+.slides_li{
+    transform:scale(2);
+}
+input[type="file"]{
+    position: absolute;
+    z-index:-8;
+    left:-30000px;
+    width:93px;
+    height:2px;
+    font-size: 15px;
+    color:rgb(26, 132, 245);
+  }
+.chk_bg_pic{
+    width:100%;
+    height:100% !important;
+    position: absolute;
+}
+.new-button{
+    display: inline-block;
+    padding:3px;
+    border-radius:4px;
+    cursor: pointer;
+    background-color: transparent;
+    transition:.5s;
+    border:1px solid #4CAF50;;
+    font-size: 20px;
+    text-align: center;
+    min-width:120px;
+    width:200px;
+    line-height:30px;
+    color: #4CAF50;
+  }
+.new-button:hover{
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+.upLabel1{
+    margin-left:70px;
+    margin-top:20px;
+}
+
+
+
+
+/* ==============================------------myLoginBox-----------------======================= */
+.myLoginBoxes{
+    width:60%;
+    overflow: hidden;
+    background-color: #000;
+    margin-top:50px;
+    margin-left:20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+}
+.myTopLoginBox{
+    position: relative;
+    overflow: hidden;
+    width:140%;
+    height:600px;
+    background-color: #ffb350;
+    margin-left:-20%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    z-index:20 !important;
+}
+.myBottomLoginBox{
+    width:100%;
+    height:350px;
+    background-color: rgb(117, 36, 36);
+    margin-top:-150px;
+    margin-left:0px;
+    
+}
+.topDivTitle{
+    background-color: #eee;
+    position: absolute;
+    width:100%;
+    height:50px;
+}
+.loingInput{
+    text-align: center;
+    transition:.5s;
+}
+.loingInput input{
+    width:40%;
+    height:50px;
+    padding-left:10px;
+}
+.submitLogin{
+    width:20% !important;
+    font-size:20px;
+    min-width:150px;
+    color:#fff;
+    font-weight: bold;
+    border:1px solid #fdc881;
+    background-color: #fdc881;
+    border-radius:5px;
+    border: none;
+    height:40px;
+    transition:.4s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.submitLogin:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 150px 0 rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    color: #fff;
+}
+.LoginSignUp{
+    Padding-top:200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.LoginSignUp div h3{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 150px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffb350;
+    color: #fff;
+    border:1px solid #ffb350;
+    line-height:50px;
+    width:150px;
+    font-size:20px;
+    text-align: center;
+    border-radius:10px;
+    transition:.5s;
+}
+.LoginSignUp div h3:hover{
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.1), 0 0px 0px 0 rgba(0, 0, 0, 0.1);
+    color: #ffb350;
+    background-color:transparent;
+}
+.ForgotPass{
+    text-align: center;
+    color: #ffb350;
+    font-size:18px;
+    margin-top:40px;
+    cursor: pointer;
+}
+.loginType{
+    color:#fff;
+    padding-right:20px;
+}
+
+input[type="radio"]{
+    width:20px;
+    height:20px;
+    cursor: pointer;
+}
+.getErrorInfo{
+    text-align:center;
+    line-height:50px;
+    color:red;
+    font-size:23px;
+}
+.NextLogin{
+    width:30%;
+    margin-left:35%;
+    line-height:40px;
+    font-size:20px;
+    min-width:150px;
+    color:#fff;
+    font-weight: bold;
+    border:1px solid #fdc881;
+    background-color: #fdc881;
+    border-radius:5px;
+    border: none;
+    height:40px;
+    transition:.4s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.NextLogin:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 150px 0 rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    color: #fff;
+}
+
+
+@media screen and (max-width:600px){
+    .myLoginBoxes{
+        width:90%;
+        overflow: hidden;
+        background-color: #000;
+        margin-top:10px;
+        margin-left:5%;
+        height:90%;
+    }
+    .myTopLoginBox{
+        position: relative;
+        overflow: hidden;
+        width:160%;
+        margin-left:-30%;
+        height:500px;
+    }
+    .signupInput input{
+        height:40px !important;
+    }
+    input[type="radio"]{
+        width:20px !important;
+        height:20px !important;
+        cursor: pointer;
+    }
+}
+
+
+
+@media screen and (max-width:500px){
+    .myLoginBoxes{
+        width:95%;
+        margin-left:2.5%;
+    }
+    .loingInput input{
+        width:60%;
+        height:50px;
+        padding-left:10px;
+    }
+    .getErrorInfo{
+        font-size:20px;
+    }
+    
+}
+
+.no_txt{
+    background-color:#4CAF50;
+    border-radius:50% !important;
+    margin-bottom:10px !important;
+    color:#fff !important;
+}
+.no_pic img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
+@media screen and (max-width:768px){
+    .no_txt{
+        width:50px;
+        height:50px;
+        text-align:center;
+        line-height:50px;
+    }
+}
+.reframePicm, .reframePic1{
+    height:100% !important;
+    width:100% !important;
+    border-radius:50%;
+}
+.tuma2{
+    margin-top:10px;
+    border: 1px solid #fff;
+    text-align:center;
+    height:100px;
+    width:100px; 
+    margin-left:calc(50% - 45px); 
+    border-radius:50%;
+}
+.mainEditBox{
+    display: block;
+    opacity:0;
+    height:500px;
+    margin-left:calc(50% - 300px);
+    z-index:5000;
+    width:400px;
+    visibility: hidden;
+    background-color: #444444;
+    position: fixed;
+    transition:1s;
+    margin-top:10px;
+    overflow: hidden ;
+}
+.mainEditBox::content{
+    opacity:0 !important;
+}
+.editTopbox{
+    position: absolute;
+    width:100%;
+    height:200px;
+    background-color:#4CAF50;
+    margin-left:-0%;
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%;
+}
+.editBottomBox{
+    position: absolute;
+    width:80%;
+    margin-left:10%;
+    height:10px;
+    bottom: 0;
+    background-color:#4CAF50;
+    border-top-left-radius:70%;
+    border-top-right-radius:70%;
+}
+@media screen and (max-width:400px){
+    
+    .myBottomLoginBox{
+        height:300px;
+    }
+    .LoginSignUp{
+        Padding-top:170px;
+    }
+    .LoginSignUp div h3{
+        width:130px;
+        font-size:18px;
+    }
+    .ForgotPass{
+        margin-top:30px;
+    }
+}
+.prev{
+    margin-top:-8px;
+    height:60px;
+    min-width:50px;
+    width:60px !important;
+    line-height:60px;border-radius:50%;
+    transform:rotate(90deg);
+    font-size:20px;
+    margin-left:calc(50% - 30px);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Portfolio Section
+--------------------------------*/
+
+#portfolio {
+    padding: 60px 0;
+  }
+  
+  #portfolio #portfolio-flters {
+    padding: 0;
+    margin: 5px 0 35px 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  #portfolio #portfolio-flters li {
+    cursor: pointer;
+    margin: 15px 15px 15px 0;
+    display: inline-block;
+    padding: 6px 10px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #413e66;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #portfolio #portfolio-flters li:hover,
+  #portfolio #portfolio-flters li.filter-active {
+    color: #1bb1dc;
+  }
+  
+  #portfolio #portfolio-flters li:last-child {
+    margin-right: 0;
+  }
+  
+  #portfolio .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap {
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap:hover img {
+    opacity: 0.4;
+    transition: 0.3s;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+    transition: 0.2s linear;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 {
+    font-size: 22px;
+    line-height: 1px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    padding-bottom: 0;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 a {
+    color: #fff;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 a:hover {
+    color: #1bb1dc;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info p {
+    padding: 0;
+    margin: 0;
+    color: #f8fcff;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview,
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details {
+    display: inline-block;
+    line-height: 1;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    background: #1bb1dc;
+    border-radius: 50%;
+    margin: 10px 4px 0 4px;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview i,
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details i {
+    padding-top: 6px;
+    font-size: 22px;
+    color: #fff;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview:hover,
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details:hover {
+    background: #42c3e8;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview:hover i,
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details:hover i {
+    color: #fff;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap:hover {
+    background: #282646;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap:hover .portfolio-info {
+    opacity: 1;
+  }
+  
+
+
+
+
+  /* ---------setWorker----------------- */
+.setWorker{
+    position:fixed;
+    background-color: rgba(37, 10, 10, 0.645);
+    width:100%;
+    height:100%;
+    z-index: 4000;
+}
+
+.setWorker div{
+    width:70%;
+    margin-left:15%;
+    margin-top:10%;
+    height:550px;
+    background-color: rgb(37, 10, 10);
+    overflow:auto !important;
+}
+.setWorker div input, .setWorker div select{
+    width:350px;
+    height:40px;
+    margin-top:10px;
+    padding-left:15px;
+}
+.setWorker div input:focus, .setWorker div select:focus{
+    border:4px solid rgb(242, 159, 72) !important;
+}
+.setWorker div input[type="submit"]{
+    
+    background-color: rgb(242, 159, 72);
+    color: rgb(242, 242, 242);
+    height:55px;
+    border:none;
+    font-size:22px;
+}
+.setWorkerPicBtn{
+    width:350px !important;
+    color:rgb(242, 159, 72) !important;
+    border:1px solid rgb(242, 159, 72) !important;
+}
+.setWorkerPicBtn:hover{
+    background-color: rgb(242, 159, 72);
+    color:#fff !important;
+}
+.setWorker h4{
+    color:#fff;
+    font-size:18px;
+    padding-top:40px !important;
+}
+@media screen and (max-width:580px){
+    .setWorker div{
+        width:85%;
+        margin-left:7%;
+        height:550px !important;
+    }
+    .setWorker div input, .setWorker div select, .setWorkerPicBtn{
+        width:90% !important;
+        margin-left:2%;
+    }
+}
+@media screen and (max-height:500px){
+    .setWorker div{
+        margin-top:5%;
+        height:450px !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,350 @@
+body {
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+.eaglesLogos img{
+    height:50px !important;
+    width:50px !important;
+}
+.sec{
+    margin-top:-20px;
+    display:flex;
+    justify-content: space-around;
+}
+.leftSidenav{
+    border-top-right-radius:20%;
+    width:20%;
+    position:fixed;
+    left:0px;
+    top:30px;
+    transition: 0.4s;;
+    height:101%;
+}
+ul.sidenav {
+    list-style-type: none;
+    position: relative;
+    width:100%;
+    padding: 0;
+    background-color: #000;
+    opacity:1 !important;
+    height: 100%;
+    overflow: auto;
+}
+
+ul.sidenav li a {
+	font-size:17px;
+    display: block;
+    color: #fff;
+    line-height:80px;
+    padding-left:30px;
+    text-decoration: none;
+    transition:.5s;
+}
+ul.sidenav li a:hover{
+    padding-left:40px;
+}
+ 
+ul.sidenav li a.active {
+    background-color: #ffffff;
+    border-left: 5px solid #4CAF50;
+    color: rgb(0, 0, 0);
+    margin-left:5px;
+}
+
+ul.sidenav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+ul.sidenav li a .faHeader{
+    transition:.3s;
+}
+ul.sidenav li a:hover:not(.active) .faHeader {
+    
+    color: white;
+}
+.active{
+	background-color: #4CAF50;
+    color: white;
+}
+
+
+/*------------------------------dashboard-------------------------------------------*/
+.rightSidenav{
+    width:80%;
+    margin-left:20%;
+}
+.adm{
+    position: fixed;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    width:100%;
+    top:0;
+    height:50px;
+    transition:.3s;
+    font-size:15px;
+    text-align:center;
+    z-index:40000 !important;   
+    background-color:#4CAF50;
+    color:#fff;
+}
+.adm:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+}
+
+
+
+.faHeader{
+    color:#4CAF50;
+    margin-right:20px;
+    display: block;
+}
+
+/* =====================================+++++++++++Upload Home video+++++++++++++++++================================ */
+.inputField{
+    width:50%;
+    
+}
+.inputField h4 i{
+    margin-right:20px;
+}
+.slide-select-css{
+    width:360px;
+    margin-left:65px;
+    height:30px;
+    border:1px solid #4CAF50;
+}
+.inputField input{
+    width:350px;
+    height:25px;
+    padding-left:10px;
+}
+.inputField h5{
+    margin-left:65px;
+    font-size:15px;
+    margin-top:10px;
+}
+
+.inputField textarea{
+    width:360px;
+    height:150px;
+    resize: vertical;
+    outline: none;
+    margin-left:65px;
+    overflow-x: hidden !important;
+}
+
+
+
+
+
+
+
+input[type="file"]{
+    position: absolute;
+    z-index:-8;
+    left:-30000px;
+    width:93px;
+    height:2px;
+    font-size: 15px;
+    color:rgb(26, 132, 245);
+  }
+  
+.new-button{
+    display: inline-block;
+    padding:3px;
+    border-radius:4px;
+    cursor: pointer;
+    background-color: transparent;
+    transition:.5s;
+    border:1px solid #4CAF50;;
+    font-size: 20px;
+    text-align: center;
+    min-width:120px;
+    width:35%;
+    margin-left:15% !important;
+    min-width:200px;
+    line-height:30px;
+    color: #4CAF50;
+  }
+.new-button:hover{
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+.previewImageSide{
+    width:40%;
+}
+.previewImage{
+    width:400px;
+    height:300px;
+    border:2px solid #4CAF50;;
+    text-align: center;
+}
+.previewImage i{
+    font-size:70px;
+    color:rgb(197, 194, 194);
+    line-height:300px;
+}
+.flexSecA{
+    margin-top:50px;
+    display:flex;
+    justify-content: space-between;
+}
+.tuma{
+    height:100% !important;
+    width:100% !important;
+}
+
+
+/*------------------==================Upload styling===================-------------------------------*/
+
+
+.submitButton{
+    height:50px !important;
+    width:100%;
+    margin-left:70px;
+    border:1px solid  #4CAF50;
+    background-color: #4CAF50; 
+    font-size:18px;
+    color:#fff;
+    margin-bottom:10px;
+    transition: .3s;
+}
+.submitButton:hover{
+    background-color:transparent; 
+    color:#4CAF50;   
+}
+.divTitle{
+    font-size:17px;
+    text-align: center;
+    font-weight: lighter;
+    
+}
+
+@media screen and (max-width:1158px){
+    .previewImage{
+        width:300px;
+        height:200px;
+    }
+    .leftSidenav{
+        width:25%;
+    }
+}
+.menuBars{
+    position:absolute;
+    margin-left:20px;
+    display:none;
+}
+@media screen and (max-width:1000px){
+    .leftSidenav{
+        margin-left:-70%;
+        width:50%;
+    }
+    .inputField{
+        margin-left:0%;
+        width:100%;
+    }
+    .rightSidenav{
+        width:100%;
+        margin-left:0px;
+    }
+    .previewImage{
+        width:200px;
+        height:200px;
+        margin-left:-10%;
+    }
+    .menuBars{
+        display:block;
+    }
+}
+@media screen and (max-width:650px){
+    .flexSecA{
+        display: block;
+        width:100%;
+        padding:0px !important;
+    }
+    .rightSidenav{
+        width:100%;
+        margin-left:0% !important;
+    }
+    .inputField{
+        width:80%;
+        margin-left:10% !important;
+    }
+    
+    .inputField input, .inputField h5,.inputField select, .inputField textarea {
+        width:100%;
+        margin-left:0% !important;
+    }
+    .previewImageSide{
+        width:100% !important;
+        margin-left:0% !important;
+    }
+    .previewImage{
+        width:80%;
+        /* min-width:300px; */
+        height:250px;
+        margin-left:10%;
+    }
+    .previewImage i{
+        line-height:250px;
+        font-size:40px;
+    }
+    .new-button{
+        width:80% !important;
+        margin-left:10% !important;
+    }
+        
+    .contain{
+        width:100%;
+        overflow-x: auto;
+        height:80%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------(()()()()()()()()()( dashboard )()()()()()()()()()) ----------------------------*/
+.dashBoxes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.dashBoxes .abox{ 
+    width:300px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    height:150px;
+    margin:10px;
+    background-color: rgb(79, 243, 64);
+    transition: .3s;
+}
+.dashBoxes .abox:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 6px 120px 0 rgba(0, 0, 0, 0.04);
+}
+.tot_reg_dashboard{
+    /* line-height:150px;     */
+    /* border: 1px solid red; */
+    text-align: center;
+    
+}
